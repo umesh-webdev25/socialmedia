@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SocialMedia - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header / Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 lg:px-40 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">share</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">SocialMedia</h2>
+</div>
+<label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-400 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-0 h-full placeholder:text-slate-400 px-4 rounded-r-lg pl-2 text-sm font-normal" placeholder="Search friends, posts..."/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<nav class="hidden sm:flex items-center gap-6">
+<a class="text-primary text-sm font-semibold flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-lg">home</span> Home
+                    </a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-lg">person</span> Profile
+                    </a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-red-500 transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-lg">logout</span> Logout
+                    </a>
+</nav>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile picture of a young man smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQOSNk3RkthIqVtrvnHL9X06QGuM21j3BrqB0Dc18wzP6iUKYsTs3NCdAdggol889avA7vD0O-MlpR_8iOSnNDYX8F4_pLy9hDfOLn9wmDV1sjTGQ0XTpdE4pmir3LZnaaZpC9qxiNlqYFI8iVg8Bd42pqhJkK90qoK_SVinecErmjUaNeuIW5BIufiebEpVxTKsrhXODVImDgF15btZxzPXiYNG7uGjt55-LfRyVXtuWXWIMsYLJgM5R19swoLGUqA3k4X1Ed-013");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-[680px] flex-1 px-4 gap-6">
+<!-- Create Post Section -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 shadow-sm">
+<div class="flex gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 shrink-0" data-alt="Current user avatar for post creation" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDON4nieqNxUW3ZR_fk9wALAtMpbcXb1yUhp1yE-638fCgnVS4d_H3PzP9FYza_3ZH6UZGhw54aO7ZD01mw8-IxjLUF2WK2-UVcU5Axp41jRznXR_3TBcJ52rhbIlzt2ujzdY8W4Mg-le285COl4ASZZ2n2hUrqzJ6Htt_MIBGG4Vc2EtYfel8IlC24QuijLOI3q0z9XpV5P7TCfTHLoyPA8GDne9k0q3m29z_xVFiUPXD8I1TDgwsBvP-YfllOnqfHsXPV11Y4uCSu");'></div>
+<div class="flex flex-1 flex-col gap-3">
+<textarea class="form-input w-full resize-none border-none bg-transparent text-slate-900 dark:text-slate-100 focus:ring-0 p-0 text-lg placeholder:text-slate-400" placeholder="What's on your mind, Alex?" rows="2"></textarea>
+<div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-3">
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-primary transition-colors">
+<span class="material-symbols-outlined">image</span>
+</button>
+<button class="flex items-center justify-center p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-primary transition-colors">
+<span class="material-symbols-outlined">location_on</span>
+</button>
+<button class="flex items-center justify-center p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-primary transition-colors">
+<span class="material-symbols-outlined">mood</span>
+</button>
+</div>
+<button class="min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-md hover:bg-primary/90 transition-all">
+                                    Post
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Feed Separator -->
+<div class="flex items-center gap-4 px-2">
+<span class="text-xs font-bold uppercase tracking-widest text-slate-400">Recent Feed</span>
+<div class="h-px bg-slate-200 dark:border-slate-800 flex-1"></div>
+</div>
+<!-- Post Card 1 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm transition-transform hover:shadow-md">
+<!-- User Header -->
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Sarah Jenkins profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBT81tUbeBcAKJ3qFlvNehVBYbQxrgoJREcKgmkb7mL66hQFihmmKK3sofnN6ceacU6UXOtpgzdUV1R8gBwx-8Js0cQCB3SgAy9V7TNzuJxkqFWKvVyi6oFTv194ssz0rkWC66vT8dW_LZio4JcZr8oOGIwQCQve2i8RlkkTADLqYiI_KLB3IAJAUO0nfmjpxIci3XPIp9zgEsGOUhkCGhdbvqlLrhjd_k_CUHzojP46dSluzhBecKBs-sj7whcq7Eax2nMbpQ1E-fs");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm leading-tight">Sarah Jenkins</p>
+<p class="text-slate-400 text-xs font-normal">2 hours ago</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-primary/10 text-primary text-xs font-bold hover:bg-primary hover:text-white transition-all">Follow</button>
+<button class="p-1.5 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+<!-- Post Content -->
+<div class="px-4 pb-3">
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed">Waking up to these views in the Swiss Alps. Truly a dream come true! 🏔️✨ #travel #nature #alps</p>
+</div>
+<!-- Post Image -->
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover" data-alt="Stunning mountain landscape with clear blue sky" data-location="Switzerland" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbsVBEBRCFm-WZz4rFjVX-uG-w_iIxaUOaXaCJ43EE5QM0eWJMXUMgR3-kqtQ2nwsMBZqxxpK-CkKyo4jWVpws5DwUqwrXl8b7VIsRgTqMTrhtf81MXCmVmPlXFWtGKe0Be6-qTBeZP1PLQoH_9ULikQNNby9D9sEI1aKU9P-OUxg8zjssOH3nyQyYYoFuLZgk1jjGFnOt1mwUfIpyWXSoDW0lcN9C7bgIWEzckCCGuscxE_VcK52rElg3uwO-kDRSHZi-gAIjUz-r");'></div>
+<!-- Post Actions -->
+<div class="p-3 flex items-center gap-6">
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-red-500 transition-colors group">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform">favorite</span>
+<span class="text-sm font-bold">1.4k</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors group">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform">chat_bubble</span>
+<span class="text-sm font-bold">82</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-green-500 transition-colors group">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform">share</span>
+<span class="text-sm font-bold">12</span>
+</button>
+</div>
+</div>
+<!-- Post Card 2 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm transition-transform hover:shadow-md">
+<!-- User Header -->
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Marcus Wong profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARV8atW12QTvZq084rQ5zdmMgY-9qNY7c8MYFO2AJpDXUZLCXLBQzA-Wa-xFqyFsoAGG0JZI9ZkUIowg-Wb-UEG9OboUWRPogNHOIZVKZGDTPEwphQx5MojjCnV6ADBBdc3ei__vivZC819QtFQL4IiVFCh8VEz8WYv0YhSaAuBOCEQBdNShlDAZNsvSz34wFgHOZ0fOJDnMDpSend5RY5pybXxP2clB20mbhS3MYfcyFG-O-bV1JqQdZRr6Hgtode2bKhrvNs8IxJ");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm leading-tight">Marcus Wong</p>
+<p class="text-slate-400 text-xs font-normal">5 hours ago</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-primary/10 text-primary text-xs font-bold hover:bg-primary hover:text-white transition-all">Follow</button>
+<button class="p-1.5 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+<!-- Post Content -->
+<div class="px-4 pb-3">
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed">Just shipped my first React component library! Check out the documentation and let me know what you think. 💻🚀</p>
+</div>
+<!-- Post Image (Small Project Card Style) -->
+<div class="mx-4 mb-3 rounded-lg overflow-hidden border border-slate-100 dark:border-slate-800">
+<div class="w-full bg-slate-100 dark:bg-slate-800 p-8 flex flex-col items-center justify-center text-center gap-3">
+<div class="size-16 bg-primary/20 rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">code</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold">UI-Kit v1.0.0</h3>
+<p class="text-slate-500 text-sm">Lightweight, accessible components for modern web apps.</p>
+</div>
+</div>
+<!-- Post Actions -->
+<div class="p-3 flex items-center gap-6">
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-red-500 transition-colors group">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform">favorite</span>
+<span class="text-sm font-bold">256</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors group">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform">chat_bubble</span>
+<span class="text-sm font-bold">45</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-green-500 transition-colors group">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform">share</span>
+<span class="text-sm font-bold">8</span>
+</button>
+</div>
+</div>
+<!-- Post Card 3 (Simple Text Post) -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm transition-transform hover:shadow-md">
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="David Chen profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcSWaJw3kkKVffIsIhAumhDWWjancuCUIqddnbzeDkuiItfQu2Qwt7MYN4jPirFuGGjMO-uSQV5GnvsIk0nN8Htzo5fz6c9CtS6Ttq5sykMXsh2VKtXSluDK9g6WKCaHmpxRLhWYK82-BypgBiREYBMQ9Czm94ncGgb82T-iFz8r_VRUrF_uXm6dmA4Yr1ktXmOyykDkpFpFpufblDtQOKYA1SIoue7sCAibO14OSwDs1n8HhvZ1mkk_1R0UekCG1v0fNx3AIulZZa");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm leading-tight">David Chen</p>
+<p class="text-slate-400 text-xs font-normal">8 hours ago</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary/90 transition-all">Following</button>
+<button class="p-1.5 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+<div class="px-4 pb-4">
+<p class="text-slate-700 dark:text-slate-300 text-lg font-medium italic">"The best way to predict the future is to create it." - Peter Drucker</p>
+<p class="mt-4 text-slate-500 dark:text-slate-400 text-sm">Feeling motivated today to keep building the next big thing! 🚀</p>
+</div>
+<div class="p-3 flex items-center gap-6 border-t border-slate-50 dark:border-slate-800">
+<button class="flex items-center gap-1.5 text-red-500 transition-colors group">
+<span class="material-symbols-outlined text-[22px] fill-1">favorite</span>
+<span class="text-sm font-bold">42</span>
+</button>
+<button class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors group">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform">chat_bubble</span>
+<span class="text-sm font-bold">3</span>
+</button>
+</div>
+</div>
+<!-- Load More / End of Feed -->
+<div class="flex flex-col items-center py-6 gap-2">
+<div class="size-2 bg-primary rounded-full animate-bounce"></div>
+<p class="text-slate-400 text-xs font-medium uppercase tracking-widest">End of Feed</p>
+</div>
+</div>
+</main>
+<!-- Right Sidebar (Suggested Friends) - Visible on XL screens -->
+<aside class="hidden xl:flex fixed right-10 top-24 w-[300px] flex-col gap-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 shadow-sm">
+<h3 class="text-slate-900 dark:text-slate-100 font-bold mb-4">Suggested for you</h3>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-center bg-cover" data-alt="Suggested user avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCa-vYe7nc14PfeL3mg9zXwRb-kmevGBq24vjXG5Guw_1K0AWikRm6Db8YUyPexz0FMWgDnZLzXH2R_1vjkbiBKJc1uX5fYuXe-cL3O_WcuAHo6G7ovmzQV9z76rLKNe7P4-QSWqOlC0cG5hYmFA4i3yrHa5KkXNkT0q2vZNqdOYdvZi48diW5DmeDBPpnoyOT2eyEoxl9j_cYM8_bHqkLLMRcj1DEP6WpTcJKMuVjZ3Tkq27PKkocf8_O1jwUKgcM7E4OEcMBxIupc')"></div>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">Elena Rossi</p>
+<p class="text-xs text-slate-400">Designer</p>
+</div>
+</div>
+<button class="text-primary text-xs font-bold hover:underline">Follow</button>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-center bg-cover" data-alt="Suggested user avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_GBKxn8AX_sUMamsDw_tufsdczgrbf1g0r1xAcv3Gd2PIVybRLTm9Xb2UyZgCRzIwxST9RQYAomvkSPRJlzwptAUq6myqHKzcjm68p54avMGxDyjWxIpz0FyP0JypmzTUJxwzvlqPOSbE3Bi46EmERwzKFgxbg7oB6qdJajqQteH5h_12RB2NqlTazu1UuE5eHZqX1PW0AfTTLlLCYDNqUjU9xAlf2GI4JhLYLjp9tl-Kdvi4n7jGZugv3RGOTQzv64EpS4p20jOL')"></div>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">Julian Moss</p>
+<p class="text-xs text-slate-400">Software Engineer</p>
+</div>
+</div>
+<button class="text-primary text-xs font-bold hover:underline">Follow</button>
+</div>
+</div>
+</div>
+<div class="px-4">
+<p class="text-slate-400 text-[10px] uppercase tracking-tighter">© 2024 SocialMedia Inc. • Help • Privacy • Terms</p>
+</div>
+</aside>
+<!-- Left Sidebar (Shortcuts) - Visible on XL screens -->
+<aside class="hidden xl:flex fixed left-10 top-24 w-[240px] flex-col gap-2">
+<a class="flex items-center gap-3 p-3 rounded-lg bg-primary/10 text-primary font-bold" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Feed</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span>Explore</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span>Notifications</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span>Messages</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span>Saved Posts</span>
+</a>
+<hr class="my-2 border-slate-200 dark:border-slate-800"/>
+<a class="flex items-center gap-3 p-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</aside>
+</div>
+</div>
+</body></html>
