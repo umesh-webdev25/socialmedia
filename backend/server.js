@@ -44,11 +44,14 @@ app.use(globalErrorHandler);
 
 
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`\n🚀 Server running on http://localhost:${PORT}`);
-  console.log(`📦 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🔌 API Base: http://localhost:${PORT}/api\n`);
-});
+// Only start the HTTP server outside of Vercel serverless environment
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`\n🚀 Server running on http://localhost:${PORT}`);
+    console.log(`📦 Environment: ${process.env.NODE_ENV || 'development'}`);
+    console.log(`🔌 API Base: http://localhost:${PORT}/api\n`);
+  });
+}
 
 export default app;
